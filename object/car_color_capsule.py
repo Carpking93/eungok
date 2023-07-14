@@ -11,7 +11,7 @@ class Car:
   def __str__(self):
     return(f'Car(name={self.__name}, 가격={self.__price},색상={self.__color})')
 
-  @property
+  @property   #데코레이터
   def color(self):    #property 변수값이 abc이면 @abc.setter가 되야함
     return self.__color
 
